@@ -1,0 +1,233 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.container ul{
+    list-style: none;
+    margin: auto;
+    width: 70%;
+}
+.container ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px auto ;
+    padding-left: 5px;
+    width: 80%;
+    height: 35px;
+    border: 1px solid black;
+
+}
+
+.container ul li button{
+    position: absolute;
+    right: 200px;
+}
+
+.container .fields{
+    text-align: center;
+    
+}
+
+.container .fields h1{
+    margin-bottom: 20px;
+}
+
+.container .fields input{
+    width: 80%;
+    height: 30px;
+
+}
+.container .fields button{
+    width: 80%;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
+.container .fields span{
+    position: absolute;
+    left: 100px;
+    top: 85px;
+    opacity: .5;
+    pointer-events: none;
+    transition: 1s;
+}
+.container .fields input:focus~span,.container .fields input:valid~span {
+    transform: translateY(-30px);
+    opacity: 1;
+}
+
+
+.container .sort{
+    width: 80%;
+    height: 30px;
+    margin-top: 5px;
+
+    
+}
+
+#Winner{
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+/* ----------------------------- Responsividade --------------------------- */
+
+@media (max-width: 700px){
+    
+    .container .fields input{
+        width: 90%;
+        height: 30px;
+    
+    }
+    
+    .container .fields span{
+        
+        left: 55px;
+        top: 85px;
+        
+    }
+
+    .container .fields button{
+        
+        width: 90%;
+            
+    }
+
+    .container ul{
+        
+        width: 90%;
+
+    }
+
+    .container ul li{
+    
+        
+        width: 100%;
+        
+    }
+    
+    .container ul li button{
+        
+        right: 50px;
+    }
+    
+    
+  
+}
+
+@media (max-width: 600px){
+    .container .fields span{
+        
+        left: 55px;
+        top: 85px;
+        
+    }
+    .container ul li{
+        
+        width: 100%;
+        
+    
+    }
+    
+    .container ul li button{
+        
+        right: 50px;
+    }
+    
+    
+  
+}
+
+
+
+@media (max-width: 500px){
+    
+    
+    .container .fields input{
+        width: 90%;
+        height: 30px;
+    
+    }
+    
+
+    .container .fields span{
+        
+        left: 45px;
+        top: 85px;
+        opacity: .5;
+        
+    }
+
+    .container .fields button{
+        width: 90%;
+        height: 30px;
+        margin-top: 5px;
+    
+    }
+
+
+    .container ul li button{
+        
+        right: 40px;
+    }
+
+    
+    
+  
+}
+
+@media (max-width: 400px){
+        
+    .container .fields input{
+        width: 90%;
+        height: 30px;
+    
+    }
+    
+
+    .container .fields span{
+        position: absolute;
+        left: 40px;
+        top: 85px;
+        opacity: .5;
+        pointer-events: none;
+        transition: 1s;
+    }
+
+    .container .fields button{
+        width: 90%;
+        height: 30px;
+        margin-top: 5px;
+    
+    }
+
+
+    .container ul{
+        list-style: none;
+        margin: auto;
+        width: 90%;
+    }
+
+    .container ul li button{
+        position: absolute;
+        right: 40px;
+    }
+
+    
+    
+  
+}
+
+
